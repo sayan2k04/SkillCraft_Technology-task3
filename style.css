@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: linear-gradient(pink,white);
+}
+
+#difficulty {
+    margin: 20px;
+}
+
+#sudoku-grid table {
+    border-spacing: 0;
+    margin: 20px auto;
+    border: 2px solid black; /* Outer border */
+}
+
+#sudoku-grid td {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    font-size: 17px;
+}
+
+input[disabled] {
+    background-color: #f0f0f0;
+}
+
+/* Styling the 3x3 box borders */
+#sudoku-grid td:nth-child(3n) {
+    border-right: 3px solid black; /* Right border of 3x3 subgrid */
+}
+
+#sudoku-grid tr:nth-child(3n) td {
+    border-bottom: 3px solid black; /* Bottom border of 3x3 subgrid */
+}
+
+#sudoku-grid td:nth-child(3n-2) {
+    border-left: 3px solid black; /* Left border of 3x3 subgrid */
+}
+
+#sudoku-grid tr:nth-child(3n-2) td {
+    border-top: 3px solid black; /* Top border of 3x3 subgrid */
+}
